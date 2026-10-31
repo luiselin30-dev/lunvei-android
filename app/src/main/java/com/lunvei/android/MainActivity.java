@@ -17,9 +17,11 @@ public class MainActivity extends Activity {
     private static final String APP_URL =
         "https://lunvei5-anastasiasalindzer.msk1.amvera.tech/";
 
-    @Override
+           @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(android.graphics.Color.BLACK);
+        getWindow().getDecorView().setSystemUiVisibility(0);
 
         webView = new WebView(this);
         setContentView(webView);
