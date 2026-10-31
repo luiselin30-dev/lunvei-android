@@ -20,8 +20,8 @@ public class MainActivity extends Activity {
            @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setStatusBarColor(android.graphics.Color.BLACK);
-        getWindow().getDecorView().setSystemUiVisibility(0);
+        getWindow().setStatusBarColor(0xFF000000);
+        getWindow().getDecorView().setSystemUiVisibility(android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 
         webView = new WebView(this);
         setContentView(webView);
